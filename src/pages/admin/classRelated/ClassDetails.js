@@ -14,7 +14,7 @@ import { BlueButton, GreenButton, PurpleButton } from "../../../components/butto
 import TableTemplate from "../../../components/TableTemplate";
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
-
+import SpeedDialTemplate from "../../../components/SpeedDialTemplate";
 import Popup from "../../../components/Popup";
 import DeleteIcon from "@mui/icons-material/Delete";
 import PostAddIcon from '@mui/icons-material/PostAdd';
@@ -116,7 +116,7 @@ const ClassDetails = () => {
                         </Typography>
 
                         <TableTemplate buttonHaver={SubjectsButtonHaver} columns={subjectColumns} rows={subjectRows} />
-                       
+                        <SpeedDialTemplate actions={subjectActions} />
                     </>
                 }
             </>
@@ -192,7 +192,7 @@ const ClassDetails = () => {
                         </Typography>
 
                         <TableTemplate buttonHaver={StudentsButtonHaver} columns={studentColumns} rows={studentRows} />
-                       
+                        <SpeedDialTemplate actions={studentActions} />
                     </>
                 )}
             </>

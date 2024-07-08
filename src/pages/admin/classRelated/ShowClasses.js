@@ -13,7 +13,7 @@ import PostAddIcon from '@mui/icons-material/PostAdd';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import AddCardIcon from '@mui/icons-material/AddCard';
 import styled from 'styled-components';
-
+import SpeedDialTemplate from '../../../components/SpeedDialTemplate';
 import Popup from '../../../components/Popup';
 
 const ShowClasses = () => {
@@ -155,7 +155,7 @@ const ShowClasses = () => {
               {Array.isArray(sclassesList) && sclassesList.length > 0 &&
                 <TableTemplate buttonHaver={SclassButtonHaver} columns={sclassColumns} rows={sclassRows} />
               }
-              
+              <SpeedDialTemplate actions={actions} />
             </>}
         </>
       }

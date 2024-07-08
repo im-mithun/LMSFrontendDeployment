@@ -10,7 +10,7 @@ import { getAllNotices } from '../../../redux/noticeRelated/noticeHandle';
 import { deleteUser } from '../../../redux/userRelated/userHandle';
 import TableTemplate from '../../../components/TableTemplate';
 import { GreenButton } from '../../../components/buttonStyles';
-
+import SpeedDialTemplate from '../../../components/SpeedDialTemplate';
 
 const ShowNotices = () => {
 
@@ -90,7 +90,7 @@ const ShowNotices = () => {
                             {Array.isArray(noticesList) && noticesList.length > 0 &&
                                 <TableTemplate buttonHaver={NoticeButtonHaver} columns={noticeColumns} rows={noticeRows} />
                             }
-                           
+                            <SpeedDialTemplate actions={actions} />
                         </Paper>
                     }
                 </>

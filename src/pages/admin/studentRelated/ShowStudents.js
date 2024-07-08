@@ -10,7 +10,7 @@ import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
 import { BlackButton, BlueButton, GreenButton } from '../../../components/buttonStyles';
 import TableTemplate from '../../../components/TableTemplate';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
-
+import SpeedDialTemplate from '../../../components/SpeedDialTemplate';
 
 import * as React from 'react';
 import Button from '@mui/material/Button';
@@ -196,7 +196,7 @@ const ShowStudents = () => {
                             {Array.isArray(studentsList) && studentsList.length > 0 &&
                                 <TableTemplate buttonHaver={StudentButtonHaver} columns={studentColumns} rows={studentRows} />
                             }
-                            
+                            <SpeedDialTemplate actions={actions} />
                         </Paper>
                     }
                 </>
