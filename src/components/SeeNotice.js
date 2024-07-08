@@ -44,7 +44,7 @@ const SeeNotice = () => {
             {loading ? (
                 <div style={{ fontSize: '20px' }}>Loading...</div>
             ) : response ? (
-                <div style={{ fontSize: '20px' }}>No Notices to Show Right Now</div>
+                <div style={{ fontSize: '20px' }}>No Notices</div>
             ) : (
                 <>
                     <h3 style={{ fontSize: '30px', marginBottom: '40px' }}>Notices</h3>

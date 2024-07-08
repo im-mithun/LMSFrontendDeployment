@@ -77,7 +77,7 @@ const AdminDashboard = () => {
                             noWrap
                             sx={{ flexGrow: 1, color: 'black' }}  // Set the text color to black
                         >
-                            Admin Dashboard
+                            Admin
                         </Typography>
                         <AccountMenu />
                     </Toolbar>

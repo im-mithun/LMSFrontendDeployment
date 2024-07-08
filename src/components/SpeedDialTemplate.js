@@ -1,12 +1,12 @@
 import React from 'react'
 import { SpeedDial, SpeedDialAction, styled } from '@mui/material';
-import TuneIcon from '@mui/icons-material/Tune';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const SpeedDialTemplate = ({ actions }) => {
     return (
         <CustomSpeedDial
             ariaLabel="SpeedDial playground example"
-            icon={<TuneIcon />}
+            icon={<SettingsIcon style={{ color: '#ffffff', fontSize: '1.8rem' }} />}
             direction="left"
         >
             {actions.map((action) => (
@@ -25,10 +25,7 @@ export default SpeedDialTemplate
 
 const CustomSpeedDial = styled(SpeedDial)`
   .MuiSpeedDial-fab {
-    background-color: #032803;
-    
-    &:hover {
-      background-color: green;
-    }
+    background-color: #000000;
+    color: #ffffff;
   }
 `;
